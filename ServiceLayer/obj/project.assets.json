@@ -5742,11 +5742,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C#__v2\\izpit\\ServiceLayer\\ServiceLayer.csproj",
+      "projectUniqueName": "D:\\Coding\\Programirane\\C#\\School\\RS\\GroupExam\\SnookerCRUD\\ServiceLayer\\ServiceLayer.csproj",
       "projectName": "ServiceLayer",
-      "projectPath": "D:\\C#__v2\\izpit\\ServiceLayer\\ServiceLayer.csproj",
+      "projectPath": "D:\\Coding\\Programirane\\C#\\School\\RS\\GroupExam\\SnookerCRUD\\ServiceLayer\\ServiceLayer.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\C#__v2\\izpit\\ServiceLayer\\obj\\",
+      "outputPath": "D:\\Coding\\Programirane\\C#\\School\\RS\\GroupExam\\SnookerCRUD\\ServiceLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5763,11 +5763,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\C#__v2\\izpit\\BusinessLayer\\BusinessLayer.csproj": {
-              "projectPath": "D:\\C#__v2\\izpit\\BusinessLayer\\BusinessLayer.csproj"
+            "D:\\Coding\\Programirane\\C#\\School\\RS\\GroupExam\\SnookerCRUD\\BusinessLayer\\BusinessLayer.csproj": {
+              "projectPath": "D:\\Coding\\Programirane\\C#\\School\\RS\\GroupExam\\SnookerCRUD\\BusinessLayer\\BusinessLayer.csproj"
             },
-            "D:\\C#__v2\\izpit\\DataLayer\\DataLayer.csproj": {
-              "projectPath": "D:\\C#__v2\\izpit\\DataLayer\\DataLayer.csproj"
+            "D:\\Coding\\Programirane\\C#\\School\\RS\\GroupExam\\SnookerCRUD\\DataLayer\\DataLayer.csproj": {
+              "projectPath": "D:\\Coding\\Programirane\\C#\\School\\RS\\GroupExam\\SnookerCRUD\\DataLayer\\DataLayer.csproj"
             }
           }
         }
@@ -5796,7 +5796,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
