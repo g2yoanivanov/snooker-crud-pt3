@@ -1,0 +1,37 @@
+<<<<<<< HEAD
+D:\C#__v2\izpit\ServiceLayer\bin\Debug\net5.0\ServiceLayer.deps.json
+D:\C#__v2\izpit\ServiceLayer\bin\Debug\net5.0\ServiceLayer.dll
+D:\C#__v2\izpit\ServiceLayer\bin\Debug\net5.0\ServiceLayer.pdb
+D:\C#__v2\izpit\ServiceLayer\bin\Debug\net5.0\BusinessLayer.dll
+D:\C#__v2\izpit\ServiceLayer\bin\Debug\net5.0\DataLayer.dll
+D:\C#__v2\izpit\ServiceLayer\bin\Debug\net5.0\BusinessLayer.pdb
+D:\C#__v2\izpit\ServiceLayer\bin\Debug\net5.0\DataLayer.pdb
+D:\C#__v2\izpit\ServiceLayer\obj\Debug\net5.0\ServiceLayer.csproj.AssemblyReference.cache
+D:\C#__v2\izpit\ServiceLayer\obj\Debug\net5.0\ServiceLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#__v2\izpit\ServiceLayer\obj\Debug\net5.0\ServiceLayer.AssemblyInfoInputs.cache
+D:\C#__v2\izpit\ServiceLayer\obj\Debug\net5.0\ServiceLayer.AssemblyInfo.cs
+D:\C#__v2\izpit\ServiceLayer\obj\Debug\net5.0\ServiceLayer.csproj.CoreCompileInputs.cache
+D:\C#__v2\izpit\ServiceLayer\obj\Debug\net5.0\ServiceLayer.csproj.CopyComplete
+D:\C#__v2\izpit\ServiceLayer\obj\Debug\net5.0\ServiceLayer.dll
+D:\C#__v2\izpit\ServiceLayer\obj\Debug\net5.0\refint\ServiceLayer.dll
+D:\C#__v2\izpit\ServiceLayer\obj\Debug\net5.0\ServiceLayer.pdb
+D:\C#__v2\izpit\ServiceLayer\obj\Debug\net5.0\ref\ServiceLayer.dll
+=======
+D:\Coding\Programirane\C#\School\RS\GroupExam\SnookerCRUD\ServiceLayer\bin\Debug\net5.0\ServiceLayer.deps.json
+D:\Coding\Programirane\C#\School\RS\GroupExam\SnookerCRUD\ServiceLayer\bin\Debug\net5.0\ServiceLayer.dll
+D:\Coding\Programirane\C#\School\RS\GroupExam\SnookerCRUD\ServiceLayer\bin\Debug\net5.0\ref\ServiceLayer.dll
+D:\Coding\Programirane\C#\School\RS\GroupExam\SnookerCRUD\ServiceLayer\bin\Debug\net5.0\ServiceLayer.pdb
+D:\Coding\Programirane\C#\School\RS\GroupExam\SnookerCRUD\ServiceLayer\bin\Debug\net5.0\BusinessLayer.dll
+D:\Coding\Programirane\C#\School\RS\GroupExam\SnookerCRUD\ServiceLayer\bin\Debug\net5.0\DataLayer.dll
+D:\Coding\Programirane\C#\School\RS\GroupExam\SnookerCRUD\ServiceLayer\bin\Debug\net5.0\BusinessLayer.pdb
+D:\Coding\Programirane\C#\School\RS\GroupExam\SnookerCRUD\ServiceLayer\bin\Debug\net5.0\DataLayer.pdb
+D:\Coding\Programirane\C#\School\RS\GroupExam\SnookerCRUD\ServiceLayer\obj\Debug\net5.0\ServiceLayer.csproj.AssemblyReference.cache
+D:\Coding\Programirane\C#\School\RS\GroupExam\SnookerCRUD\ServiceLayer\obj\Debug\net5.0\ServiceLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Coding\Programirane\C#\School\RS\GroupExam\SnookerCRUD\ServiceLayer\obj\Debug\net5.0\ServiceLayer.AssemblyInfoInputs.cache
+D:\Coding\Programirane\C#\School\RS\GroupExam\SnookerCRUD\ServiceLayer\obj\Debug\net5.0\ServiceLayer.AssemblyInfo.cs
+D:\Coding\Programirane\C#\School\RS\GroupExam\SnookerCRUD\ServiceLayer\obj\Debug\net5.0\ServiceLayer.csproj.CoreCompileInputs.cache
+D:\Coding\Programirane\C#\School\RS\GroupExam\SnookerCRUD\ServiceLayer\obj\Debug\net5.0\ServiceLayer.csproj.CopyComplete
+D:\Coding\Programirane\C#\School\RS\GroupExam\SnookerCRUD\ServiceLayer\obj\Debug\net5.0\ServiceLayer.dll
+D:\Coding\Programirane\C#\School\RS\GroupExam\SnookerCRUD\ServiceLayer\obj\Debug\net5.0\ref\ServiceLayer.dll
+D:\Coding\Programirane\C#\School\RS\GroupExam\SnookerCRUD\ServiceLayer\obj\Debug\net5.0\ServiceLayer.pdb
+>>>>>>> 930b273d2c98a64c5c3c6a23a778d25ac414e5cc
