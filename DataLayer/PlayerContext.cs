@@ -125,5 +125,28 @@ namespace DataLayer
                 throw ex;
             }
         }
+
+        public int FindByName(string firtsName, string lastName)
+        {
+            try
+            {
+                List<Player> list = _context.Players.ToList();
+
+                foreach(Player player in list)
+                {
+                    if(player.FirstName == firtsName && player.LastName == lastName)
+                    {
+                        return player.Id;
+                    }
+                }
+
+                return -1;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
     }
 }
