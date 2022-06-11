@@ -26,7 +26,7 @@ namespace ServiceLayer
             catch (Exception ex)
             {
 
-                throw;
+                throw ex;
             }
         }
 
@@ -39,7 +39,7 @@ namespace ServiceLayer
             catch (Exception ex)
             {
 
-                throw;
+                throw ex;
             }
         }
 
@@ -52,7 +52,7 @@ namespace ServiceLayer
             catch (Exception ex)
             {
 
-                throw;
+                throw ex;
             }
         }
 
@@ -65,7 +65,7 @@ namespace ServiceLayer
             catch (Exception ex)
             {
 
-                throw;
+                throw ex;
             }
         }
 
@@ -78,7 +78,7 @@ namespace ServiceLayer
             catch (Exception ex)
             {
 
-                throw;
+                throw ex;
             }
         }
     }

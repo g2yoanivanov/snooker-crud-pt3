@@ -7,7 +7,7 @@ using DataLayer;
 
 namespace ServiceLayer
 {
-    class DbContextManager
+    public class DbContextManager
     {
         private static SnookerCRUDDbContext _context;
         private static CountryContext _countryContext;

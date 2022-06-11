@@ -79,5 +79,26 @@ namespace DataLayer
                 throw ex;
             }
         }
+
+        public int FindByName(string name)
+        {
+            try
+            {
+                List<Country> list = _context.Countries.ToList();
+
+                foreach (Country country in list)
+                {
+                    if(country.Name == name)
+                    {
+                        return country.Id;
+                    }
+                }
+                return -1;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }
