@@ -25,10 +25,10 @@ namespace DataLayer
             if (!optionsBuilder.IsConfigured)
             {
                 //Yoan's connection string
-                optionsBuilder.UseSqlServer(@"Server=DESKTOP-HB55C5B;Database=SnookerCRUDDb;Trusted_Connection=True;");
+                //optionsBuilder.UseSqlServer(@"Server=DESKTOP-HB55C5B;Database=SnookerCRUDDb;Trusted_Connection=True;");
                 
                 //Victor's connection string
-                //optionsBuilder.UseSqlServer(@"Server=DESKTOP-54NFRM2\SQLEXPRESS;Database=SnookerCRUDDb;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer(@"Server=DESKTOP-54NFRM2\SQLEXPRESS;Database=SnookerCRUDDb;Trusted_Connection=True;");
             }
         }
 
