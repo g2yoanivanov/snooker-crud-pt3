@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8KSXb+nmCoStBDNKHSGU7+2iHigl+6g+zmZhH6eMXvI/83DLOCM05/FBqHl97oNUtO023D7/h5rHRJC48hqhAQ==",
+  "dgSpecHash": "a678yFGWtSwjMf6sgQmHu8aC3+aJGvTHsVqC/APXgDkUj32iJbXktbLpCSG5vgYMLCBkUE1BbY6Yau17r8tbHQ==",
   "success": true,
-  "projectFilePath": "D:\\C#__v2\\izpit\\ServiceLayer\\ServiceLayer.csproj",
+  "projectFilePath": "D:\\Coding\\Programirane\\C#\\School\\RS\\GroupExam\\SnookerCRUD\\ServiceLayer\\ServiceLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
