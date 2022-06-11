@@ -136,9 +136,8 @@ namespace PresentationLayer
                 }
             }
             catch (Exception ex)
-            {
-
-                throw;
+            { 
+                throw ex;
             }
         }
 
@@ -153,10 +152,18 @@ namespace PresentationLayer
             {
                 int id = Convert.ToInt32(dgvTournaments.Rows[e.RowIndex].Cells[0].Value);
                 string name = dgvTournaments.Rows[e.RowIndex].Cells[1].Value.ToString();
-                string location = dgvTournaments.Rows[e.RowIndex].Cells[2].Value.ToString(); ;
-                decimal prizePool = Convert.ToDecimal(dgvTournaments.Rows[e.RowIndex].Cells[0].Value);
-                int winnerId = Convert.ToInt32(dgvTournaments.Rows[e.RowIndex].Cells[0].Value);
-                string winner = dgvTournaments.Rows[e.RowIndex].Cells[0].Value.ToString(); ;
+                string location = dgvTournaments.Rows[e.RowIndex].Cells[2].Value.ToString();
+                decimal prizePool = Convert.ToDecimal(dgvTournaments.Rows[e.RowIndex].Cells[3].Value);
+                int winnerId = Convert.ToInt32(dgvTournaments.Rows[e.RowIndex].Cells[4].Value);
+                string winner;
+                if(dgvTournaments.Rows[e.RowIndex].Cells[5].Value == null)
+                {
+                    winner = null;
+                }
+                else
+                {
+                    winner = dgvTournaments.Rows[e.RowIndex].Cells[5].Value.ToString();
+                }
 
                 txtName.Text = name;
                 txtLocation.Text = location;
@@ -180,10 +187,17 @@ namespace PresentationLayer
 
         private void LoadPlayers()
         {
-            lbPlayers.DataSource = playerDbManager.ReadAll();
+            List<Player> players = playerDbManager.ReadAll().ToList();
+            List<string> names =new List<string>(players.Count);
 
-            lbPlayers.DisplayMember = "Name";
-            lbPlayers.ValueMember = "Id";
+            foreach (Player p in players)
+            {
+                names.Add(p.FirstName + " " + p.LastName);
+            }
+
+            lbPlayers.DataSource = names;
+            lbWinner.DataSource = names;
+
         }
 
         private void LoadTournaments()
@@ -198,7 +212,7 @@ namespace PresentationLayer
                 row.Cells[1].Value = item.Name;
                 row.Cells[2].Value = item.Location;
                 row.Cells[3].Value = item.PrizePool;
-                if(item.WinnerId == null)
+                if(item.WinnerId == 0)
                 {
                     row.Cells[4].Value = null;
                     row.Cells[5].Value = null;
@@ -222,8 +236,18 @@ namespace PresentationLayer
             row.Cells[1].Value = item.Name;
             row.Cells[2].Value = item.Location;
             row.Cells[3].Value = item.PrizePool;
-            row.Cells[4].Value = item.WinnerId;
-            row.Cells[5].Value = playerDbManager.Read(item.WinnerId).FirstName + " " + playerDbManager.Read(item.WinnerId).LastName;
+
+            if (item.WinnerId == 0)
+            {
+                row.Cells[4].Value = null;
+                row.Cells[5].Value = null;
+            }
+            else
+            {
+                row.Cells[4].Value = item.WinnerId;
+                row.Cells[5].Value = playerDbManager.Read(item.WinnerId).FirstName + " " + playerDbManager.Read(item.WinnerId).LastName;
+            }
+            
             row.Cells[6].Value = item.Players;
 
             dgvTournaments.Rows.Add(row);
@@ -247,7 +271,7 @@ namespace PresentationLayer
 
         private bool ValidateData()
         {
-            if(txtName.Text != string.Empty && txtName.Text != string.Empty && numPrize.Value > 0)
+            if(txtName.Text != string.Empty && txtLocation.Text != string.Empty)
             {
                 return true;
             }

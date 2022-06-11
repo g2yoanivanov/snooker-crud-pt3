@@ -52,119 +52,127 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(54, 59);
+            this.label1.Location = new System.Drawing.Point(47, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 20);
+            this.label1.Size = new System.Drawing.Size(39, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Name";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(54, 107);
+            this.label2.Location = new System.Drawing.Point(47, 80);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 20);
+            this.label2.Size = new System.Drawing.Size(53, 15);
             this.label2.TabIndex = 1;
             this.label2.Text = "Location";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(54, 156);
+            this.label3.Location = new System.Drawing.Point(47, 117);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 20);
+            this.label3.Size = new System.Drawing.Size(59, 15);
             this.label3.TabIndex = 2;
             this.label3.Text = "Prize Pool";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(789, 62);
+            this.label4.Location = new System.Drawing.Point(690, 46);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 20);
+            this.label4.Size = new System.Drawing.Size(44, 15);
             this.label4.TabIndex = 3;
             this.label4.Text = "Players";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(54, 218);
+            this.label5.Location = new System.Drawing.Point(47, 164);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 20);
+            this.label5.Size = new System.Drawing.Size(45, 15);
             this.label5.TabIndex = 4;
             this.label5.Text = "Winner";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(475, 62);
+            this.label6.Location = new System.Drawing.Point(416, 46);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(94, 20);
+            this.label6.Size = new System.Drawing.Size(76, 15);
             this.label6.TabIndex = 5;
             this.label6.Text = "Tournaments";
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(147, 55);
-            this.txtName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtName.Location = new System.Drawing.Point(129, 41);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(137, 27);
+            this.txtName.Size = new System.Drawing.Size(120, 23);
             this.txtName.TabIndex = 6;
             // 
             // txtLocation
             // 
-            this.txtLocation.Location = new System.Drawing.Point(147, 103);
-            this.txtLocation.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtLocation.Location = new System.Drawing.Point(129, 77);
             this.txtLocation.Name = "txtLocation";
-            this.txtLocation.Size = new System.Drawing.Size(137, 27);
+            this.txtLocation.Size = new System.Drawing.Size(120, 23);
             this.txtLocation.TabIndex = 7;
             // 
             // numPrize
             // 
-            this.numPrize.Location = new System.Drawing.Point(147, 153);
-            this.numPrize.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.numPrize.Location = new System.Drawing.Point(129, 115);
+            this.numPrize.Maximum = new decimal(new int[] {
+            1000000000,
+            0,
+            0,
+            0});
+            this.numPrize.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
             this.numPrize.Name = "numPrize";
-            this.numPrize.Size = new System.Drawing.Size(137, 27);
+            this.numPrize.Size = new System.Drawing.Size(120, 23);
             this.numPrize.TabIndex = 8;
+            this.numPrize.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
             // 
             // lbPlayers
             // 
             this.lbPlayers.FormattingEnabled = true;
-            this.lbPlayers.ItemHeight = 20;
-            this.lbPlayers.Location = new System.Drawing.Point(743, 103);
-            this.lbPlayers.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lbPlayers.ItemHeight = 15;
+            this.lbPlayers.Location = new System.Drawing.Point(650, 77);
             this.lbPlayers.Name = "lbPlayers";
-            this.lbPlayers.Size = new System.Drawing.Size(137, 204);
+            this.lbPlayers.Size = new System.Drawing.Size(120, 154);
             this.lbPlayers.TabIndex = 9;
             // 
             // lbWinner
             // 
             this.lbWinner.FormattingEnabled = true;
-            this.lbWinner.ItemHeight = 20;
-            this.lbWinner.Location = new System.Drawing.Point(147, 218);
-            this.lbWinner.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lbWinner.ItemHeight = 15;
+            this.lbWinner.Location = new System.Drawing.Point(129, 164);
             this.lbWinner.Name = "lbWinner";
-            this.lbWinner.Size = new System.Drawing.Size(137, 24);
+            this.lbWinner.Size = new System.Drawing.Size(120, 19);
             this.lbWinner.TabIndex = 10;
             // 
             // dgvTournaments
             // 
             this.dgvTournaments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTournaments.Location = new System.Drawing.Point(355, 103);
-            this.dgvTournaments.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dgvTournaments.Location = new System.Drawing.Point(311, 77);
             this.dgvTournaments.Name = "dgvTournaments";
             this.dgvTournaments.RowHeadersWidth = 51;
             this.dgvTournaments.RowTemplate.Height = 25;
-            this.dgvTournaments.Size = new System.Drawing.Size(314, 200);
+            this.dgvTournaments.Size = new System.Drawing.Size(275, 150);
             this.dgvTournaments.TabIndex = 11;
             this.dgvTournaments.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTournaments_CellClick);
             // 
             // btnCreate
             // 
-            this.btnCreate.Location = new System.Drawing.Point(58, 325);
-            this.btnCreate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnCreate.Location = new System.Drawing.Point(51, 244);
             this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(86, 31);
+            this.btnCreate.Size = new System.Drawing.Size(75, 23);
             this.btnCreate.TabIndex = 12;
             this.btnCreate.Text = "Create";
             this.btnCreate.UseVisualStyleBackColor = true;
@@ -172,10 +180,9 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(177, 325);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnUpdate.Location = new System.Drawing.Point(155, 244);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(86, 31);
+            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnUpdate.TabIndex = 13;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -183,10 +190,9 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(121, 364);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnExit.Location = new System.Drawing.Point(106, 273);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(86, 31);
+            this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 14;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -194,10 +200,9 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(464, 325);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnDelete.Location = new System.Drawing.Point(406, 244);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(86, 31);
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 15;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -205,9 +210,10 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(763, 325);
+            this.btnAdd.Location = new System.Drawing.Point(668, 244);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(94, 29);
+            this.btnAdd.Size = new System.Drawing.Size(82, 22);
             this.btnAdd.TabIndex = 16;
             this.btnAdd.Text = "Add Player";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -215,9 +221,9 @@
             // 
             // TournamentsForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(914, 600);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnExit);
@@ -235,7 +241,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "TournamentsForm";
             this.Text = "TournamentsForm";
             ((System.ComponentModel.ISupportInitialize)(this.numPrize)).EndInit();
