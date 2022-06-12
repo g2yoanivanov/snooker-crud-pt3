@@ -82,6 +82,7 @@ namespace PresentationLayer
             if (selectedCountry != null)
             {
                 countryDbManager.Delete(selectedCountry.Id);
+                MessageBox.Show("Country deleted successfully!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 LoadCountries();
 
@@ -131,7 +132,5 @@ namespace PresentationLayer
 
             selectedCountry = null;
         }
-
-
     }
 }

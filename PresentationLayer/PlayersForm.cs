@@ -99,6 +99,7 @@ namespace PresentationLayer
             if(selectedPlayer != null)
             {
                 playersDbManager.Delete(selectedPlayer.Id);
+                MessageBox.Show("Player deleted successfully!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 DeletePlayerRow();
                 ClearData();
@@ -247,6 +248,6 @@ namespace PresentationLayer
 
             selectedPlayer = null;
             selectedRow = -1;
-        }     
+        }
     }
 }
