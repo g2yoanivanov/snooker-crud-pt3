@@ -21,6 +21,24 @@ namespace DataLayer
         {
             try
             {
+                List<Player> list = new List<Player>(item.Players.Count());
+
+                foreach (Player player in item.Players)
+                {
+                    Player fromDB = _context.Players.Find(player.Id);
+
+                    if (fromDB != null)
+                    {
+                        list.Add(fromDB);
+                    }
+                    else
+                    {
+                        list.Add(player);
+                    }
+                }
+
+                item.Players = list;
+
                 _context.Tournaments.Add(item);
                 _context.SaveChanges();
             }
@@ -28,22 +46,19 @@ namespace DataLayer
             {
                 throw ex;
             }
-        }    
+        }
 
-        public Tournament Read(int key, bool useNavigationProperties = false)
+        public Tournament Read(int key)
         {
             try
             {
                 IQueryable<Tournament> query = _context.Tournaments;
 
-                if (useNavigationProperties)
-                {
-                    query = query.Include(t => t.Players);
-                }
+                query = query.Include(t => t.Players);
 
                 Tournament fromDB = query.SingleOrDefault(t => t.Id == key);
 
-                if(fromDB == null)
+                if (fromDB == null)
                 {
                     throw new ArgumentException("The is no tournament with that ID!");
                 }
@@ -56,16 +71,13 @@ namespace DataLayer
             }
         }
 
-        public IEnumerable<Tournament> ReadAll(bool useNavigationProperties = false)
+        public IEnumerable<Tournament> ReadAll()
         {
             try
             {
                 IQueryable<Tournament> query = _context.Tournaments;
 
-                if (useNavigationProperties)
-                {
-                    query = query.Include(t => t.Players);
-                }
+                query = query.Include(t => t.Players);
 
                 return query.ToList();
             }
@@ -75,32 +87,29 @@ namespace DataLayer
             }
         }
 
-        public void Update(Tournament item, bool useNavigationProperties = false)
+        public void Update(Tournament item)
         {
             try
             {
-                Tournament fromDB = Read(item.Id, useNavigationProperties);
+                Tournament fromDB = Read(item.Id);
 
-                if (useNavigationProperties)
+                List<Player> players = new List<Player>();
+
+                foreach (Player player in item.Players)
                 {
-                    List<Player> players = new List<Player>();
+                    Player playerFromDB = _context.Players.Find(player.Id);
 
-                    foreach (Player player in item.Players)
+                    if (playerFromDB != null)
                     {
-                        Player playerFromDB = _context.Players.Find(player.Id);
-
-                        if(playerFromDB != null)
-                        {
-                            players.Add(playerFromDB);
-                        }
-                        else
-                        {
-                            players.Add(player);
-                        }
+                        players.Add(playerFromDB);
                     }
-
-                    fromDB.Players = players;
+                    else
+                    {
+                        players.Add(player);
+                    }
                 }
+
+                fromDB.Players = players;
 
                 _context.Entry(fromDB).CurrentValues.SetValues(item);
                 _context.SaveChanges();

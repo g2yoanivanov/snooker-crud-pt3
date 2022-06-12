@@ -37,16 +37,13 @@ namespace DataLayer
             }
         }
 
-        public Player Read(int key, bool useNavigationProperties = false)
+        public Player Read(int key)
         {
             try
             {
                 IQueryable<Player> query = _context.Players;
 
-                if(useNavigationProperties)
-                {
-                    query = query.Include(p => p.Country).Include(p => p.Tournaments);
-                }
+                query = query.Include(p => p.Country).Include(p => p.Tournaments);
 
                 return query.SingleOrDefault(p => p.Id == key);
             }
@@ -56,16 +53,13 @@ namespace DataLayer
             }
         }
 
-        public IEnumerable<Player> ReadAll(bool useNavigationProperties = false)
+        public IEnumerable<Player> ReadAll()
         {
             try
             {
                 IQueryable<Player> query = _context.Players;
 
-                if (useNavigationProperties)
-                {
-                    query = query.Include(p => p.Country).Include(p => p.Tournaments);
-                }
+                query = query.Include(p => p.Country).Include(p => p.Tournaments);
 
                 return query.ToList();
             }
@@ -75,14 +69,12 @@ namespace DataLayer
             }
         }
 
-        public void Update(Player item, bool useNavigationProperties = false)
+        public void Update(Player item)
         {
             try
             {
-                Player fromDB = Read(item.Id, useNavigationProperties);
+                Player fromDB = Read(item.Id);
 
-                if(useNavigationProperties)
-                {
                     fromDB.Country = item.Country;
 
                     List<Tournament> tournaments = new List<Tournament>();
@@ -102,7 +94,6 @@ namespace DataLayer
                     }
 
                     fromDB.Tournaments = tournaments;
-                }
 
                 _context.Entry(fromDB).CurrentValues.SetValues(item);
                 _context.SaveChanges();

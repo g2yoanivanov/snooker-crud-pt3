@@ -32,13 +32,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtLocation = new System.Windows.Forms.TextBox();
             this.numPrize = new System.Windows.Forms.NumericUpDown();
             this.lbPlayers = new System.Windows.Forms.ListBox();
-            this.lbWinner = new System.Windows.Forms.ListBox();
             this.dgvTournaments = new System.Windows.Forms.DataGridView();
             this.btnCreate = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
@@ -52,7 +50,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(47, 44);
+            this.label1.Location = new System.Drawing.Point(58, 80);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(39, 15);
             this.label1.TabIndex = 0;
@@ -61,7 +59,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(47, 80);
+            this.label2.Location = new System.Drawing.Point(58, 116);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 15);
             this.label2.TabIndex = 1;
@@ -70,7 +68,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(47, 117);
+            this.label3.Location = new System.Drawing.Point(58, 153);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 15);
             this.label3.TabIndex = 2;
@@ -85,15 +83,6 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Players";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(47, 164);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(45, 15);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Winner";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -105,21 +94,21 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(129, 41);
+            this.txtName.Location = new System.Drawing.Point(140, 77);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(120, 23);
             this.txtName.TabIndex = 6;
             // 
             // txtLocation
             // 
-            this.txtLocation.Location = new System.Drawing.Point(129, 77);
+            this.txtLocation.Location = new System.Drawing.Point(140, 113);
             this.txtLocation.Name = "txtLocation";
             this.txtLocation.Size = new System.Drawing.Size(120, 23);
             this.txtLocation.TabIndex = 7;
             // 
             // numPrize
             // 
-            this.numPrize.Location = new System.Drawing.Point(129, 115);
+            this.numPrize.Location = new System.Drawing.Point(140, 151);
             this.numPrize.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -147,15 +136,7 @@
             this.lbPlayers.Name = "lbPlayers";
             this.lbPlayers.Size = new System.Drawing.Size(120, 154);
             this.lbPlayers.TabIndex = 9;
-            // 
-            // lbWinner
-            // 
-            this.lbWinner.FormattingEnabled = true;
-            this.lbWinner.ItemHeight = 15;
-            this.lbWinner.Location = new System.Drawing.Point(129, 164);
-            this.lbWinner.Name = "lbWinner";
-            this.lbWinner.Size = new System.Drawing.Size(120, 19);
-            this.lbWinner.TabIndex = 10;
+            this.lbPlayers.SelectedValueChanged += new System.EventHandler(this.lbPlayers_SelectedValueChanged);
             // 
             // dgvTournaments
             // 
@@ -170,7 +151,7 @@
             // 
             // btnCreate
             // 
-            this.btnCreate.Location = new System.Drawing.Point(51, 244);
+            this.btnCreate.Location = new System.Drawing.Point(81, 243);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(75, 23);
             this.btnCreate.TabIndex = 12;
@@ -180,7 +161,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(155, 244);
+            this.btnUpdate.Location = new System.Drawing.Point(185, 243);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnUpdate.TabIndex = 13;
@@ -190,7 +171,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(106, 273);
+            this.btnExit.Location = new System.Drawing.Point(136, 272);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 14;
@@ -230,13 +211,11 @@
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.dgvTournaments);
-            this.Controls.Add(this.lbWinner);
             this.Controls.Add(this.lbPlayers);
             this.Controls.Add(this.numPrize);
             this.Controls.Add(this.txtLocation);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -256,13 +235,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.TextBox txtLocation;
         private System.Windows.Forms.NumericUpDown numPrize;
         private System.Windows.Forms.ListBox lbPlayers;
-        private System.Windows.Forms.ListBox lbWinner;
         private System.Windows.Forms.DataGridView dgvTournaments;
         private System.Windows.Forms.Button btnCreate;
         private System.Windows.Forms.Button btnUpdate;

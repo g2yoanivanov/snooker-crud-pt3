@@ -164,6 +164,7 @@ namespace PresentationLayer
             dgvPlayers.Columns.Add("country", "Country");
             dgvPlayers.Columns.Add("matchesPlayed", "Matches Played");
             dgvPlayers.Columns.Add("tournamentsWon", "Tournaments Won");
+            dgvPlayers.Columns.Add("tournamentParticipatingIn", "Active Tournaments");
         }
 
         private void LoadPlayers()
@@ -182,6 +183,11 @@ namespace PresentationLayer
                 row.Cells[5].Value = countryDbManager.Read(item.CountryId).Name;
                 row.Cells[6].Value = item.MatchesPlayed;
                 row.Cells[7].Value = item.TournamentsWon;
+
+                if(item.TournamentsWon != null)
+                {
+                    row.Cells[8].Value = string.Join(", ", item.Tournaments.Select(p => p.Name));
+                }
 
                 dgvPlayers.Rows.Add(row);
             }

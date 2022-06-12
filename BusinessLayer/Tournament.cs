@@ -20,13 +20,8 @@ namespace BusinessLayer
         [Required, MaxLength(64)]
         public string Location { get; set; }
 
-        [Required, Range(100, 1000000000, ErrorMessage = "The prize pool must be between 100 and 10M!")]
+        [Required, Range(100, 1000000000, ErrorMessage = "The prize pool must be between 100 and 1B!")]
         public decimal PrizePool { get; set; }
-
-        [ForeignKey("Winner")]
-        public int WinnerId { get; set; }
-        [NotMapped]
-        public Player Winner { get; set; }
 
         public IEnumerable<Player> Players { get; set; }
 
@@ -37,6 +32,7 @@ namespace BusinessLayer
             Name = name;
             Location = location;
             PrizePool = prizePool;
+            Players = new HashSet<Player>();
         }
     }
 }

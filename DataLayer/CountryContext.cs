@@ -29,7 +29,7 @@ namespace DataLayer
             }
         }
 
-        public Country Read(int key, bool useNavigationProperties = false)
+        public Country Read(int key)
         {
             try
             {
@@ -41,7 +41,7 @@ namespace DataLayer
             }
         }
 
-        public IEnumerable<Country> ReadAll(bool useNavigationProperties = false)
+        public IEnumerable<Country> ReadAll()
         {
             try
             {
@@ -53,7 +53,7 @@ namespace DataLayer
             }
         }
 
-        public void Update(Country item, bool useNavigationProperties = false)
+        public void Update(Country item)
         {
             try
             {
