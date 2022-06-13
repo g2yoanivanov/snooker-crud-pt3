@@ -132,5 +132,10 @@ namespace PresentationLayer
 
             selectedCountry = null;
         }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            ClearData();
+        }
     }
 }

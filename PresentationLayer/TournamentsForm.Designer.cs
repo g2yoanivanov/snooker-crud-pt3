@@ -43,79 +43,91 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numPrize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTournaments)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Lavender;
             this.label1.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(66, 95);
+            this.label1.Location = new System.Drawing.Point(11, 99);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 26);
+            this.label1.Size = new System.Drawing.Size(122, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "Name";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Lavender;
             this.label2.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(39, 140);
+            this.label2.Location = new System.Drawing.Point(12, 144);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 26);
+            this.label2.Size = new System.Drawing.Size(121, 26);
             this.label2.TabIndex = 1;
             this.label2.Text = "Location";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Lavender;
             this.label3.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(25, 188);
+            this.label3.Location = new System.Drawing.Point(11, 192);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(108, 26);
+            this.label3.Size = new System.Drawing.Size(122, 26);
             this.label3.TabIndex = 2;
             this.label3.Text = "Prize Pool";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Lavender;
             this.label4.Font = new System.Drawing.Font("Tempus Sans ITC", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(858, 57);
+            this.label4.Location = new System.Drawing.Point(836, 57);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(105, 37);
+            this.label4.Size = new System.Drawing.Size(154, 37);
             this.label4.TabIndex = 3;
             this.label4.Text = "Players";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Lavender;
             this.label6.Font = new System.Drawing.Font("Tempus Sans ITC", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(483, 57);
+            this.label6.Location = new System.Drawing.Point(482, 57);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(186, 37);
+            this.label6.Size = new System.Drawing.Size(200, 37);
             this.label6.TabIndex = 5;
             this.label6.Text = "Tournaments";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(139, 94);
+            this.txtName.BackColor = System.Drawing.Color.Lavender;
+            this.txtName.ForeColor = System.Drawing.Color.DarkRed;
+            this.txtName.Location = new System.Drawing.Point(151, 98);
             this.txtName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(154, 27);
+            this.txtName.Size = new System.Drawing.Size(121, 27);
             this.txtName.TabIndex = 6;
             // 
             // txtLocation
             // 
-            this.txtLocation.Location = new System.Drawing.Point(139, 139);
+            this.txtLocation.BackColor = System.Drawing.Color.Lavender;
+            this.txtLocation.ForeColor = System.Drawing.Color.DarkRed;
+            this.txtLocation.Location = new System.Drawing.Point(151, 143);
             this.txtLocation.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtLocation.Name = "txtLocation";
-            this.txtLocation.Size = new System.Drawing.Size(154, 27);
+            this.txtLocation.Size = new System.Drawing.Size(121, 27);
             this.txtLocation.TabIndex = 7;
             // 
             // numPrize
             // 
-            this.numPrize.Location = new System.Drawing.Point(139, 187);
+            this.numPrize.BackColor = System.Drawing.Color.Lavender;
+            this.numPrize.ForeColor = System.Drawing.Color.DarkRed;
+            this.numPrize.Location = new System.Drawing.Point(151, 191);
             this.numPrize.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.numPrize.Maximum = new decimal(new int[] {
             1000000000,
@@ -128,7 +140,7 @@
             0,
             0});
             this.numPrize.Name = "numPrize";
-            this.numPrize.Size = new System.Drawing.Size(154, 27);
+            this.numPrize.Size = new System.Drawing.Size(121, 27);
             this.numPrize.TabIndex = 8;
             this.numPrize.Value = new decimal(new int[] {
             100,
@@ -138,6 +150,8 @@
             // 
             // lbPlayers
             // 
+            this.lbPlayers.BackColor = System.Drawing.Color.Lavender;
+            this.lbPlayers.ForeColor = System.Drawing.Color.DarkRed;
             this.lbPlayers.FormattingEnabled = true;
             this.lbPlayers.ItemHeight = 19;
             this.lbPlayers.Location = new System.Drawing.Point(836, 98);
@@ -149,8 +163,9 @@
             // 
             // dgvTournaments
             // 
-            this.dgvTournaments.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dgvTournaments.BackgroundColor = System.Drawing.Color.Lavender;
             this.dgvTournaments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTournaments.GridColor = System.Drawing.Color.Lavender;
             this.dgvTournaments.Location = new System.Drawing.Point(399, 98);
             this.dgvTournaments.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvTournaments.Name = "dgvTournaments";
@@ -162,9 +177,9 @@
             // 
             // btnCreate
             // 
-            this.btnCreate.BackColor = System.Drawing.Color.Crimson;
-            this.btnCreate.ForeColor = System.Drawing.Color.Indigo;
-            this.btnCreate.Location = new System.Drawing.Point(66, 308);
+            this.btnCreate.BackColor = System.Drawing.Color.DarkRed;
+            this.btnCreate.ForeColor = System.Drawing.Color.Lavender;
+            this.btnCreate.Location = new System.Drawing.Point(33, 308);
             this.btnCreate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(100, 60);
@@ -175,9 +190,9 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.BackColor = System.Drawing.Color.Crimson;
-            this.btnUpdate.ForeColor = System.Drawing.Color.Indigo;
-            this.btnUpdate.Location = new System.Drawing.Point(172, 308);
+            this.btnUpdate.BackColor = System.Drawing.Color.DarkRed;
+            this.btnUpdate.ForeColor = System.Drawing.Color.Lavender;
+            this.btnUpdate.Location = new System.Drawing.Point(151, 308);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(100, 60);
@@ -188,9 +203,9 @@
             // 
             // btnExit
             // 
-            this.btnExit.BackColor = System.Drawing.Color.Crimson;
-            this.btnExit.ForeColor = System.Drawing.Color.Indigo;
-            this.btnExit.Location = new System.Drawing.Point(127, 376);
+            this.btnExit.BackColor = System.Drawing.Color.DarkRed;
+            this.btnExit.ForeColor = System.Drawing.Color.Lavender;
+            this.btnExit.Location = new System.Drawing.Point(151, 376);
             this.btnExit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(100, 60);
@@ -201,8 +216,8 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.BackColor = System.Drawing.Color.Crimson;
-            this.btnDelete.ForeColor = System.Drawing.Color.Indigo;
+            this.btnDelete.BackColor = System.Drawing.Color.DarkRed;
+            this.btnDelete.ForeColor = System.Drawing.Color.Lavender;
             this.btnDelete.Location = new System.Drawing.Point(518, 308);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDelete.Name = "btnDelete";
@@ -214,8 +229,8 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.BackColor = System.Drawing.Color.Crimson;
-            this.btnAdd.ForeColor = System.Drawing.Color.Indigo;
+            this.btnAdd.BackColor = System.Drawing.Color.DarkRed;
+            this.btnAdd.ForeColor = System.Drawing.Color.Lavender;
             this.btnAdd.Location = new System.Drawing.Point(863, 308);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(100, 60);
@@ -224,12 +239,26 @@
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // btnClear
+            // 
+            this.btnClear.BackColor = System.Drawing.Color.DarkRed;
+            this.btnClear.ForeColor = System.Drawing.Color.Lavender;
+            this.btnClear.Location = new System.Drawing.Point(33, 376);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(100, 60);
+            this.btnClear.TabIndex = 17;
+            this.btnClear.Text = "Clear Data";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
             // TournamentsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Indigo;
+            this.BackColor = System.Drawing.Color.MidnightBlue;
             this.ClientSize = new System.Drawing.Size(1028, 570);
+            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnExit);
@@ -246,7 +275,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.ForeColor = System.Drawing.Color.Crimson;
+            this.ForeColor = System.Drawing.Color.DarkRed;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "TournamentsForm";
             this.Text = "TournamentsForm";
@@ -274,5 +303,6 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnClear;
     }
 }

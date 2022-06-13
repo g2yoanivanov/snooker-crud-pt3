@@ -37,10 +37,10 @@
             // 
             // btnCountries
             // 
-            this.btnCountries.BackColor = System.Drawing.Color.Crimson;
+            this.btnCountries.BackColor = System.Drawing.Color.DarkRed;
             this.btnCountries.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.btnCountries.ForeColor = System.Drawing.Color.Indigo;
-            this.btnCountries.Location = new System.Drawing.Point(220, 315);
+            this.btnCountries.ForeColor = System.Drawing.Color.Lavender;
+            this.btnCountries.Location = new System.Drawing.Point(207, 314);
             this.btnCountries.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCountries.Name = "btnCountries";
             this.btnCountries.Size = new System.Drawing.Size(123, 76);
@@ -51,10 +51,10 @@
             // 
             // btnPlayers
             // 
-            this.btnPlayers.BackColor = System.Drawing.Color.Crimson;
+            this.btnPlayers.BackColor = System.Drawing.Color.DarkRed;
             this.btnPlayers.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.btnPlayers.ForeColor = System.Drawing.Color.Indigo;
-            this.btnPlayers.Location = new System.Drawing.Point(394, 315);
+            this.btnPlayers.ForeColor = System.Drawing.Color.Lavender;
+            this.btnPlayers.Location = new System.Drawing.Point(381, 314);
             this.btnPlayers.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnPlayers.Name = "btnPlayers";
             this.btnPlayers.Size = new System.Drawing.Size(123, 76);
@@ -65,10 +65,10 @@
             // 
             // btnTournaments
             // 
-            this.btnTournaments.BackColor = System.Drawing.Color.Crimson;
+            this.btnTournaments.BackColor = System.Drawing.Color.DarkRed;
             this.btnTournaments.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.btnTournaments.ForeColor = System.Drawing.Color.Indigo;
-            this.btnTournaments.Location = new System.Drawing.Point(573, 315);
+            this.btnTournaments.ForeColor = System.Drawing.Color.Lavender;
+            this.btnTournaments.Location = new System.Drawing.Point(560, 314);
             this.btnTournaments.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnTournaments.Name = "btnTournaments";
             this.btnTournaments.Size = new System.Drawing.Size(123, 76);
@@ -79,9 +79,9 @@
             // 
             // btnExit
             // 
-            this.btnExit.BackColor = System.Drawing.Color.Crimson;
+            this.btnExit.BackColor = System.Drawing.Color.DarkRed;
             this.btnExit.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.btnExit.ForeColor = System.Drawing.Color.Indigo;
+            this.btnExit.ForeColor = System.Drawing.Color.Lavender;
             this.btnExit.Location = new System.Drawing.Point(780, 521);
             this.btnExit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnExit.Name = "btnExit";
@@ -94,9 +94,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Lavender;
             this.label1.Font = new System.Drawing.Font("Tempus Sans ITC", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.Crimson;
-            this.label1.Location = new System.Drawing.Point(167, 98);
+            this.label1.ForeColor = System.Drawing.Color.DarkRed;
+            this.label1.Location = new System.Drawing.Point(155, 97);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(611, 78);
             this.label1.TabIndex = 4;
@@ -106,13 +107,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Indigo;
+            this.BackColor = System.Drawing.Color.MidnightBlue;
             this.ClientSize = new System.Drawing.Size(914, 600);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnTournaments);
             this.Controls.Add(this.btnPlayers);
             this.Controls.Add(this.btnCountries);
+            this.ForeColor = System.Drawing.Color.DarkRed;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "MainForm";
             this.Text = "Main Form";

@@ -249,5 +249,10 @@ namespace PresentationLayer
             selectedPlayer = null;
             selectedRow = -1;
         }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            ClearData();
+        }
     }
 }

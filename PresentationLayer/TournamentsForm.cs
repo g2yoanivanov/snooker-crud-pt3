@@ -182,6 +182,11 @@ namespace PresentationLayer
             numPrize.Value = numPrize.Minimum;
 
             selectedTournament = null;
-        } 
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            ClearData();
+        }
     }
 }
