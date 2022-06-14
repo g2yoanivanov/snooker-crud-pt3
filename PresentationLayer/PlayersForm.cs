@@ -114,26 +114,33 @@ namespace PresentationLayer
         {
             if(e.RowIndex != -1 && e.ColumnIndex != -1)
             {
+                players = playersDbManager.ReadAll().ToList();
+                if(e.RowIndex < players.Count())
+                {
+                    int id = Convert.ToInt32(dgvPlayers.Rows[e.RowIndex].Cells[0].Value);
+                    string fName = dgvPlayers.Rows[e.RowIndex].Cells[1].Value.ToString();
+                    string lName = dgvPlayers.Rows[e.RowIndex].Cells[2].Value.ToString();
+                    int age = Convert.ToInt32(dgvPlayers.Rows[e.RowIndex].Cells[3].Value);
+                    int countryId = Convert.ToInt32(dgvPlayers.Rows[e.RowIndex].Cells[4].Value);
+                    string countryName = dgvPlayers.Rows[e.RowIndex].Cells[5].Value.ToString();
+                    int matches = Convert.ToInt32(dgvPlayers.Rows[e.RowIndex].Cells[6].Value);
+                    int tournaments = Convert.ToInt32(dgvPlayers.Rows[e.RowIndex].Cells[7].Value);
 
-                int id = Convert.ToInt32(dgvPlayers.Rows[e.RowIndex].Cells[0].Value);
-                string fName = dgvPlayers.Rows[e.RowIndex].Cells[1].Value.ToString();
-                string lName = dgvPlayers.Rows[e.RowIndex].Cells[2].Value.ToString();
-                int age = Convert.ToInt32(dgvPlayers.Rows[e.RowIndex].Cells[3].Value);
-                int countryId = Convert.ToInt32(dgvPlayers.Rows[e.RowIndex].Cells[4].Value);
-                string countryName = dgvPlayers.Rows[e.RowIndex].Cells[5].Value.ToString();
-                int matches = Convert.ToInt32(dgvPlayers.Rows[e.RowIndex].Cells[6].Value);
-                int tournaments = Convert.ToInt32(dgvPlayers.Rows[e.RowIndex].Cells[7].Value);
+                    selectedPlayer = players.Find(p => p.Id == id);
 
-                selectedPlayer = players.First(p => p.Id == id);
+                    txtFirstName.Text = fName;
+                    txtLastName.Text = lName;
+                    numAge.Value = age;
+                    lbCountries.Text = countryName;
+                    numMatches.Value = matches;
+                    numTournaments.Value = tournaments;
 
-                txtFirstName.Text = fName;
-                txtLastName.Text = lName;
-                numAge.Value = age;
-                lbCountries.Text = countryName;
-                numMatches.Value = matches;
-                numTournaments.Value = tournaments;
-
-                selectedRow = e.RowIndex;
+                    selectedRow = e.RowIndex;
+                }
+                else
+                {
+                    ClearData();
+                }
             }
         }
 

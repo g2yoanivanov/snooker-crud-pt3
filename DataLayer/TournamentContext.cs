@@ -21,7 +21,7 @@ namespace DataLayer
         {
             try
             {
-                List<Player> list = new List<Player>(item.Players.Count());
+                HashSet<Player> list = new HashSet<Player>(item.Players.Count());
 
                 foreach (Player player in item.Players)
                 {
@@ -93,7 +93,7 @@ namespace DataLayer
             {
                 Tournament fromDB = Read(item.Id);
 
-                List<Player> players = new List<Player>();
+                HashSet<Player> players = new HashSet<Player>();
 
                 foreach (Player player in item.Players)
                 {
