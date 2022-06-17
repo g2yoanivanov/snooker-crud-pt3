@@ -119,6 +119,7 @@ namespace PresentationLayer
                         ((HashSet<Player>)selectedTournament.Players).Add(selectedPlayer);
 
                         tournamentDbManager.Update(selectedTournament);
+                        UpdateTournamentRow();
 
                         MessageBox.Show(string.Format("{0} added successfully!", (selectedPlayer.FirstName + " " + selectedPlayer.LastName)), "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
@@ -232,6 +233,7 @@ namespace PresentationLayer
             dgvTournaments.Rows[selectedRowIndex].Cells[1].Value = selectedTournament.Name;
             dgvTournaments.Rows[selectedRowIndex].Cells[2].Value = selectedTournament.Location;
             dgvTournaments.Rows[selectedRowIndex].Cells[3].Value = selectedTournament.PrizePool;
+            dgvTournaments.Rows[selectedRowIndex].Cells[4].Value = string.Join(", ", selectedTournament.Players.Select(p => p.FirstName).ToList());
         }
 
         private void DeleteTournamentRow()
