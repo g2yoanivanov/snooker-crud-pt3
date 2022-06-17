@@ -18,6 +18,10 @@ namespace PresentationLayer
         private DbManager<Player, int> playerDbManager;
         private Tournament? selectedTournament;
         private Player selectedPlayer;
+        private List<Tournament> tournaments;
+
+        int selectedRowIndex = -1;
+
 
         public TournamentsForm()
         {
@@ -26,6 +30,7 @@ namespace PresentationLayer
             tournamentDbManager = new DbManager<Tournament, int>(DbContextManager.CreateTournamentContext(DbContextManager.CreateContext()));
             playerDbManager = new DbManager<Player, int>(DbContextManager.CreatePlayerContext(DbContextManager.GetContext()));
 
+            LoadHeaderRow();
             LoadTournaments();
             LoadPlayers();
         }
@@ -51,7 +56,7 @@ namespace PresentationLayer
                     tournamentDbManager.Create(tournament);
                     MessageBox.Show("Tournament created successfully!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    LoadTournaments();
+                    AddTournamentRow(tournament);
                     ClearData();
 
                    txtName.Focus();
@@ -78,9 +83,13 @@ namespace PresentationLayer
                 tournamentDbManager.Update(selectedTournament);
                 MessageBox.Show("Tournament updated successfully!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                LoadTournaments();
+                UpdateTournamentRow();
                 ClearData();
            }
+            else
+            {
+                MessageBox.Show("Field given are required!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -90,8 +99,12 @@ namespace PresentationLayer
                 tournamentDbManager.Delete(selectedTournament.Id);
                 MessageBox.Show("Tournament deleted successfully!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                LoadTournaments();
+                DeleteTournamentRow();
                 ClearData();
+            }
+            else
+            {
+                MessageBox.Show("You must select a tournament!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -127,15 +140,28 @@ namespace PresentationLayer
 
         private void dgvTournaments_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(e.RowIndex != -1)
+            if(e.RowIndex != -1 && e.ColumnIndex != -1)
             {
-                DataGridViewRow row = dgvTournaments.Rows[e.RowIndex];
+                tournaments = tournamentDbManager.ReadAll().ToList();
+                if(e.RowIndex < tournaments.Count())
+                {
+                    int id = Convert.ToInt32(dgvTournaments.Rows[e.RowIndex].Cells[0].Value);
+                    string name = dgvTournaments.Rows[e.RowIndex].Cells[1].Value.ToString();
+                    string location = dgvTournaments.Rows[e.RowIndex].Cells[2].Value.ToString();
+                    decimal prizePool = Convert.ToDecimal(dgvTournaments.Rows[e.RowIndex].Cells[3].Value);
 
-                selectedTournament = (Tournament)row.DataBoundItem;
+                    selectedTournament = tournaments.Find(t => t.Id == id);
 
-                txtName.Text = selectedTournament.Name;
-                txtLocation.Text = selectedTournament.Location;
-                numPrize.Value = selectedTournament.PrizePool;
+                    txtName.Text = name;
+                    txtLocation.Text = location;
+                    numPrize.Value = prizePool;
+
+                    selectedRowIndex = e.RowIndex;
+                }
+                else
+                {
+                    ClearData();
+                }
             }
         }
 
@@ -152,9 +178,65 @@ namespace PresentationLayer
             this.Close();
         }
 
+        private void LoadHeaderRow()
+        {
+            dgvTournaments.Columns.Add("id", "Id");
+            dgvTournaments.Columns.Add("name", "Name");
+            dgvTournaments.Columns.Add("id", "Id");
+            dgvTournaments.Columns.Add("id", "Id");
+            dgvTournaments.Columns.Add("players", "Players");
+        }
+
         private void LoadTournaments()
         {
-            dgvTournaments.DataSource = tournamentDbManager.ReadAll();
+            tournaments = tournamentDbManager.ReadAll().ToList();
+
+            foreach (Tournament item in tournaments)
+            {
+                DataGridViewRow row = (DataGridViewRow)dgvTournaments.Rows[0].Clone();
+
+                row.Cells[0].Value = item.Id;
+                row.Cells[1].Value = item.Name;
+                row.Cells[2].Value = item.Location;
+                row.Cells[3].Value = item.PrizePool;
+                
+                if(item.Players != null)
+                {
+                    row.Cells[4].Value = string.Join(", ", item.Players.Select(p => p.FirstName));
+                }
+
+                dgvTournaments.Rows.Add(row);
+            }
+        }
+
+        private void AddTournamentRow(Tournament item)
+        {
+            DataGridViewRow row = (DataGridViewRow)dgvTournaments.Rows[0].Clone();
+
+            row.Cells[0].Value = item.Id;
+            row.Cells[1].Value = item.Name;
+            row.Cells[2].Value = item.Location;
+            row.Cells[3].Value = item.PrizePool;
+
+            if (item.Players != null)
+            {
+                row.Cells[4].Value = string.Join(", ", item.Players.Select(p => p.FirstName));
+            }
+
+            dgvTournaments.Rows.Add(row);
+        }
+
+        private void UpdateTournamentRow()
+        {
+            dgvTournaments.Rows[selectedRowIndex].Cells[0].Value = selectedTournament.Id;
+            dgvTournaments.Rows[selectedRowIndex].Cells[1].Value = selectedTournament.Name;
+            dgvTournaments.Rows[selectedRowIndex].Cells[2].Value = selectedTournament.Location;
+            dgvTournaments.Rows[selectedRowIndex].Cells[3].Value = selectedTournament.PrizePool;
+        }
+
+        private void DeleteTournamentRow()
+        {
+            dgvTournaments.Rows.RemoveAt(selectedRowIndex);
         }
 
         private void LoadPlayers()

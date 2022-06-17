@@ -34,5 +34,10 @@ namespace BusinessLayer
             PrizePool = prizePool;
             Players = new HashSet<Player>();
         }
+
+        public Tournament(int id, string name, string location, decimal prizePool) : this(name, location, prizePool)
+        {
+            Id = id;
+        }
     }
 }
