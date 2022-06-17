@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yOtuapxlUrUzlNABKvPLCX+jQgTi7QgfxlnlDjpp0MJS0/qL9TFNnoFMVvurz/iB3cf6WMfB6ZQrrsTEdhhI5A==",
+  "dgSpecHash": "Z9QLb2z3HUX6CrwLrrtNj1D4rdpQ278MR8R/tKOXFhKwVAe6IVwo8zKVQFB5PsWylGD2xUhAv7yhNb5iZ6VABg==",
   "success": true,
-  "projectFilePath": "D:\\Coding\\Programirane\\C#\\School\\RS\\GroupExam\\SnookerCRUD\\PresentationLayer\\PresentationLayer.csproj",
+  "projectFilePath": "D:\\C#__v2\\izpit\\PresentationLayer\\PresentationLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
@@ -97,8 +97,7 @@
     "C:\\Users\\User\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\User\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
+    "C:\\Users\\User\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

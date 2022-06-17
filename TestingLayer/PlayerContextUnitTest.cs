@@ -14,6 +14,7 @@ namespace TestingLayer
         private PlayerContext playerContext;
         private CountryContext countryContext;
         DbContextOptionsBuilder builder;
+        Country country;
 
         [SetUp]
         public void Setup()
@@ -26,12 +27,17 @@ namespace TestingLayer
 
         }
 
+        [OneTimeSetUp]
+        public void OneTimeSetUp()
+        {
+            country = new Country("Bul");
+        }
+
         [Test]
         public void TestCreatePlayer()
         {
             int playersBefore = playerContext.ReadAll().Count();
 
-            Country country = countryContext.Read(1);
             
             playerContext.Create(new Player("Victor", "Ivanov", 18, country, 127, 1));
 
@@ -43,7 +49,6 @@ namespace TestingLayer
         [Test]
         public void TestReadPlayer()
         {
-            Country country = countryContext.Read(1);
             playerContext.Create(new Player("Yoan", "Ivanov", 17, country, 0, 0));
 
             Player player = playerContext.Read(1);
@@ -54,7 +59,6 @@ namespace TestingLayer
         [Test]
         public void TestUpdatePlayer()
         {
-            Country country = countryContext.Read(1);
             playerContext.Create(new Player("Yoan", "Ivanov", 17, country, 0, 0));
 
             Player player = playerContext.Read(1);
@@ -71,7 +75,6 @@ namespace TestingLayer
         [Test]
         public void TestDeletePlayer()
         {
-            Country country = countryContext.Read(1);
             playerContext.Create(new Player("Iztrit", "Iztritko", 21, country, 0, 0));
 
             int playersBeforeDelete = playerContext.ReadAll().Count();
