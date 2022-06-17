@@ -77,7 +77,7 @@
             // 
             // btnCreate
             // 
-            this.btnCreate.BackColor = System.Drawing.Color.Crimson;
+            this.btnCreate.BackColor = System.Drawing.Color.DarkRed;
             this.btnCreate.ForeColor = System.Drawing.Color.Lavender;
             this.btnCreate.Location = new System.Drawing.Point(99, 366);
             this.btnCreate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -90,7 +90,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.BackColor = System.Drawing.Color.Crimson;
+            this.btnUpdate.BackColor = System.Drawing.Color.DarkRed;
             this.btnUpdate.ForeColor = System.Drawing.Color.Lavender;
             this.btnUpdate.Location = new System.Drawing.Point(224, 366);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -103,7 +103,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.BackColor = System.Drawing.Color.Crimson;
+            this.btnExit.BackColor = System.Drawing.Color.DarkRed;
             this.btnExit.ForeColor = System.Drawing.Color.Lavender;
             this.btnExit.Location = new System.Drawing.Point(224, 434);
             this.btnExit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -116,7 +116,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.BackColor = System.Drawing.Color.Crimson;
+            this.btnDelete.BackColor = System.Drawing.Color.DarkRed;
             this.btnDelete.ForeColor = System.Drawing.Color.Lavender;
             this.btnDelete.Location = new System.Drawing.Point(687, 366);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -285,7 +285,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.BackColor = System.Drawing.Color.Crimson;
+            this.btnClear.BackColor = System.Drawing.Color.DarkRed;
             this.btnClear.ForeColor = System.Drawing.Color.Lavender;
             this.btnClear.Location = new System.Drawing.Point(99, 434);
             this.btnClear.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);

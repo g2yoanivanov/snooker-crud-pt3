@@ -40,6 +40,7 @@ namespace PresentationLayer
                 if(selectedPlayer != null)
                 {
                     MessageBox.Show("You can't create duplicated player!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
                 }
 
                 if (ValidateData())

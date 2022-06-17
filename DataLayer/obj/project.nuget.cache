@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3ryU/f6R3I2aVQJ8MsGnTkSl0Jqw5ikG5iB8vvSCSBdm1md+9ajnd0ymWDARg2BKtCLTsbK4wGYPnMAH6tklIQ==",
+  "dgSpecHash": "BiPiIMkG2XYqBG3xz11x6/vzMeprOVN3DZ+5lBO5HE/Gt4Ol3HQDcRlDcfIi570pNEnB3Qx03ud7pNSDl9H8WA==",
   "success": true,
-  "projectFilePath": "D:\\C#__v2\\izpit\\DataLayer\\DataLayer.csproj",
+  "projectFilePath": "D:\\Coding\\Programirane\\C#\\School\\RS\\GroupExam\\SnookerCRUD\\DataLayer\\DataLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
