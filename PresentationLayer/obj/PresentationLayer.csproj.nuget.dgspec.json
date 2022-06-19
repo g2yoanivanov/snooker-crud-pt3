@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C#__v2\\izpit\\PresentationLayer\\PresentationLayer.csproj": {}
+    "D:\\Coding\\Programirane\\C#\\School\\RS\\GroupExam\\SnookerCRUD\\PresentationLayer\\PresentationLayer.csproj": {}
   },
   "projects": {
-    "D:\\C#__v2\\izpit\\BusinessLayer\\BusinessLayer.csproj": {
+    "D:\\Coding\\Programirane\\C#\\School\\RS\\GroupExam\\SnookerCRUD\\BusinessLayer\\BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#__v2\\izpit\\BusinessLayer\\BusinessLayer.csproj",
+        "projectUniqueName": "D:\\Coding\\Programirane\\C#\\School\\RS\\GroupExam\\SnookerCRUD\\BusinessLayer\\BusinessLayer.csproj",
         "projectName": "BusinessLayer",
-        "projectPath": "D:\\C#__v2\\izpit\\BusinessLayer\\BusinessLayer.csproj",
+        "projectPath": "D:\\Coding\\Programirane\\C#\\School\\RS\\GroupExam\\SnookerCRUD\\BusinessLayer\\BusinessLayer.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\C#__v2\\izpit\\BusinessLayer\\obj\\",
+        "outputPath": "D:\\Coding\\Programirane\\C#\\School\\RS\\GroupExam\\SnookerCRUD\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,18 +54,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\C#__v2\\izpit\\DataLayer\\DataLayer.csproj": {
+    "D:\\Coding\\Programirane\\C#\\School\\RS\\GroupExam\\SnookerCRUD\\DataLayer\\DataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#__v2\\izpit\\DataLayer\\DataLayer.csproj",
+        "projectUniqueName": "D:\\Coding\\Programirane\\C#\\School\\RS\\GroupExam\\SnookerCRUD\\DataLayer\\DataLayer.csproj",
         "projectName": "DataLayer",
-        "projectPath": "D:\\C#__v2\\izpit\\DataLayer\\DataLayer.csproj",
+        "projectPath": "D:\\Coding\\Programirane\\C#\\School\\RS\\GroupExam\\SnookerCRUD\\DataLayer\\DataLayer.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\C#__v2\\izpit\\DataLayer\\obj\\",
+        "outputPath": "D:\\Coding\\Programirane\\C#\\School\\RS\\GroupExam\\SnookerCRUD\\DataLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -82,8 +82,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\C#__v2\\izpit\\BusinessLayer\\BusinessLayer.csproj": {
-                "projectPath": "D:\\C#__v2\\izpit\\BusinessLayer\\BusinessLayer.csproj"
+              "D:\\Coding\\Programirane\\C#\\School\\RS\\GroupExam\\SnookerCRUD\\BusinessLayer\\BusinessLayer.csproj": {
+                "projectPath": "D:\\Coding\\Programirane\\C#\\School\\RS\\GroupExam\\SnookerCRUD\\BusinessLayer\\BusinessLayer.csproj"
               }
             }
           }
@@ -128,18 +128,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\C#__v2\\izpit\\PresentationLayer\\PresentationLayer.csproj": {
+    "D:\\Coding\\Programirane\\C#\\School\\RS\\GroupExam\\SnookerCRUD\\PresentationLayer\\PresentationLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#__v2\\izpit\\PresentationLayer\\PresentationLayer.csproj",
+        "projectUniqueName": "D:\\Coding\\Programirane\\C#\\School\\RS\\GroupExam\\SnookerCRUD\\PresentationLayer\\PresentationLayer.csproj",
         "projectName": "PresentationLayer",
-        "projectPath": "D:\\C#__v2\\izpit\\PresentationLayer\\PresentationLayer.csproj",
+        "projectPath": "D:\\Coding\\Programirane\\C#\\School\\RS\\GroupExam\\SnookerCRUD\\PresentationLayer\\PresentationLayer.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\C#__v2\\izpit\\PresentationLayer\\obj\\",
+        "outputPath": "D:\\Coding\\Programirane\\C#\\School\\RS\\GroupExam\\SnookerCRUD\\PresentationLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -156,11 +156,11 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "D:\\C#__v2\\izpit\\BusinessLayer\\BusinessLayer.csproj": {
-                "projectPath": "D:\\C#__v2\\izpit\\BusinessLayer\\BusinessLayer.csproj"
+              "D:\\Coding\\Programirane\\C#\\School\\RS\\GroupExam\\SnookerCRUD\\BusinessLayer\\BusinessLayer.csproj": {
+                "projectPath": "D:\\Coding\\Programirane\\C#\\School\\RS\\GroupExam\\SnookerCRUD\\BusinessLayer\\BusinessLayer.csproj"
               },
-              "D:\\C#__v2\\izpit\\ServiceLayer\\ServiceLayer.csproj": {
-                "projectPath": "D:\\C#__v2\\izpit\\ServiceLayer\\ServiceLayer.csproj"
+              "D:\\Coding\\Programirane\\C#\\School\\RS\\GroupExam\\SnookerCRUD\\ServiceLayer\\ServiceLayer.csproj": {
+                "projectPath": "D:\\Coding\\Programirane\\C#\\School\\RS\\GroupExam\\SnookerCRUD\\ServiceLayer\\ServiceLayer.csproj"
               }
             }
           }
@@ -184,6 +184,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.13, 5.0.13]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -192,18 +198,18 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\C#__v2\\izpit\\ServiceLayer\\ServiceLayer.csproj": {
+    "D:\\Coding\\Programirane\\C#\\School\\RS\\GroupExam\\SnookerCRUD\\ServiceLayer\\ServiceLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#__v2\\izpit\\ServiceLayer\\ServiceLayer.csproj",
+        "projectUniqueName": "D:\\Coding\\Programirane\\C#\\School\\RS\\GroupExam\\SnookerCRUD\\ServiceLayer\\ServiceLayer.csproj",
         "projectName": "ServiceLayer",
-        "projectPath": "D:\\C#__v2\\izpit\\ServiceLayer\\ServiceLayer.csproj",
+        "projectPath": "D:\\Coding\\Programirane\\C#\\School\\RS\\GroupExam\\SnookerCRUD\\ServiceLayer\\ServiceLayer.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\C#__v2\\izpit\\ServiceLayer\\obj\\",
+        "outputPath": "D:\\Coding\\Programirane\\C#\\School\\RS\\GroupExam\\SnookerCRUD\\ServiceLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -220,11 +226,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\C#__v2\\izpit\\BusinessLayer\\BusinessLayer.csproj": {
-                "projectPath": "D:\\C#__v2\\izpit\\BusinessLayer\\BusinessLayer.csproj"
+              "D:\\Coding\\Programirane\\C#\\School\\RS\\GroupExam\\SnookerCRUD\\BusinessLayer\\BusinessLayer.csproj": {
+                "projectPath": "D:\\Coding\\Programirane\\C#\\School\\RS\\GroupExam\\SnookerCRUD\\BusinessLayer\\BusinessLayer.csproj"
               },
-              "D:\\C#__v2\\izpit\\DataLayer\\DataLayer.csproj": {
-                "projectPath": "D:\\C#__v2\\izpit\\DataLayer\\DataLayer.csproj"
+              "D:\\Coding\\Programirane\\C#\\School\\RS\\GroupExam\\SnookerCRUD\\DataLayer\\DataLayer.csproj": {
+                "projectPath": "D:\\Coding\\Programirane\\C#\\School\\RS\\GroupExam\\SnookerCRUD\\DataLayer\\DataLayer.csproj"
               }
             }
           }
@@ -253,7 +259,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

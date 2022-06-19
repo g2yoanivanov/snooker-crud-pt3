@@ -183,8 +183,8 @@ namespace PresentationLayer
         {
             dgvTournaments.Columns.Add("id", "Id");
             dgvTournaments.Columns.Add("name", "Name");
-            dgvTournaments.Columns.Add("id", "Id");
-            dgvTournaments.Columns.Add("id", "Id");
+            dgvTournaments.Columns.Add("location", "Location");
+            dgvTournaments.Columns.Add("prizePool", "Prize Pool");
             dgvTournaments.Columns.Add("players", "Players");
         }
 
